@@ -1,0 +1,7 @@
+github_repo: cynicvec
+description: 4-bit turbovec ANN cache that refuses to clobber the source-of-truth index.
+homepage: START_HERE.md
+private: false
+topics: vector-search,ann,rag,turbovec,edge-ml
+source_folder: cynicvec
+python: '3.12'
