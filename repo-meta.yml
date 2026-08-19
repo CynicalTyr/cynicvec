@@ -1,7 +1,7 @@
 github_repo: cynicvec
-description: 4-bit turbovec ANN cache that refuses to clobber the source-of-truth index.
+description: ANN cache with a shrink-guard save so a dual-write cannot wipe RAG while SQL still has rows.
 homepage: START_HERE.md
 private: false
-topics: vector-search,ann,rag,turbovec,edge-ml
+topics: vector-search,ann,rag,dual-write,sqlite-vec,turbovec,edge-ml
 source_folder: cynicvec
 python: '3.12'

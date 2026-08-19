@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cynicvec"
 version = "0.1.0"
-description = "4-bit turbovec ANN cache that refuses to clobber the source-of-truth index."
+description = "ANN cache with a shrink-guard save so a dual-write cannot wipe RAG while SQL still has rows."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [{ name = "CynicalTyr" }]
-keywords = ["ai-agents", "llm", "edge"]
+keywords = ["vector-search", "ann", "rag", "dual-write", "sqlite-vec", "turbovec"]
 classifiers = [
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",

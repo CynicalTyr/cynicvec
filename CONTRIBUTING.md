@@ -8,8 +8,9 @@
 python3 -m unittest discover -s tests -q
 ```
 
-4. Do not expand scope into a new agent framework. This kernel stays small
-   so people can drop it into *their* loop.
+4. Do not expand scope into a new vector database. This kernel stays a
+   cache policy: SQL stays source of truth, `save()` keeps the shrink
+   guard, and there is no MCP that loads a `.tvim` from a URL.
 
 Issues: one problem per ticket. Feature ideas: say who it helps and the
 60-second demo that would prove it.
