@@ -7,7 +7,7 @@ commands. It does **not** assume you know Docker, MCP, or how AI agents work.
 
 ![CynicVec: 4-bit ANN cache; SQL stays source of truth; save shrink guard](docs/hero.png)
 
-**One sentence:** the ANN file is a **cache**. SQL (or sqlite-vec) keeps
+The ANN file is a **cache**. SQL (or sqlite-vec) keeps
 the rows. If the cache is missing, search still works. If a save would
 halve a large index, it **aborts**.
 

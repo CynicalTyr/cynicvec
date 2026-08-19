@@ -4,16 +4,16 @@
 
 ![CynicVec: 4-bit ANN cache; SQL stays source of truth; save shrink guard](docs/hero.png)
 
-**One sentence:** CynicVec is a 4-bit approximate nearest-neighbor
+CynicVec is a 4-bit approximate nearest-neighbor
 **cache** beside a real vector table. If the cache is missing, search
 still works. If a save would halve a large index, it **aborts**.
 
-**Value proposition:** sqlite-vec, FAISS, turbovec, and Chroma all
-persist vectors. None of them refuse a dual-write that replaces a
-hundreds-of-MB backfill with an empty in-memory snapshot. That save
-looks successful. RAG goes empty at 3am while SQL still has rows. This
-wrapper **fail-opens** when `turbovec` is missing (`RuntimeError` →
-SQL/KNN) and **fail-closes** on a suicidal save.
+sqlite-vec, FAISS, turbovec, and Chroma all persist vectors. None of
+them refuse a dual-write that replaces a hundreds-of-MB backfill with
+an empty in-memory snapshot. That save looks successful. RAG goes empty
+at 3am while SQL still has rows. This wrapper **fail-opens** when
+`turbovec` is missing (`RuntimeError` → SQL/KNN) and **fail-closes** on
+a suicidal save.
 
 Suggested GitHub / PyPI name: **`cynicvec`**
 
